@@ -12,8 +12,8 @@ class UserDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // BlocProvider.of<UserInfoBloc>(context).add(UserInfoEvent());
     return Scaffold(
-      appBar: AppBar(title: Text('app')),
       body: BlocBuilder<UserInfoBloc, UserInfoState>(
         builder: (BuildContext context, UserInfoState state) {
           if (state is UserInfoLoaded) {
@@ -33,9 +33,11 @@ class UserDetailsScreen extends StatelessWidget {
               ],
             );
           } else if (state is UserInfoError) {
-            return const Center(child: Text('Error fetching user info'));
+            return const Center(child: Text(Strings.error));
           } else {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }
         },
       ),

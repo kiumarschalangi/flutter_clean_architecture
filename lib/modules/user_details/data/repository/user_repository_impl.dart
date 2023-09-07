@@ -25,6 +25,7 @@ class UserRepositoryImpl implements UserRepository {
   Future<UserEntity> getUserInfo() async {
     // whether to fetch data from remote or local storage can be implemented here.
     await Future.delayed(const Duration(seconds: 1));
+    print('user data created');
     return const UserEntity(userName: 'kiumars_ch', email: 'email');
   }
 }
