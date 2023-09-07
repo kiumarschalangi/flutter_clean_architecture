@@ -6,6 +6,9 @@ class UserRepositoryImpl implements UserRepository {
   @override
   Future<UserEntity> getUserDetails() async {
     UserInfoApiController().getUserInfoFromApi(Uri());
-    return const UserEntity('userName', 'email');
+    return const UserEntity(
+      userName: 'kiumars_ch',
+      email: 'kiumarsch96@gmail.com',
+    );
   }
 }
