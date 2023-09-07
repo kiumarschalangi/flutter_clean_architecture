@@ -1,11 +1,7 @@
 import 'package:hive/hive.dart';
 
-class Storage {
-  Storage._();
-
+class UserLocalDataSource {
   late Box<dynamic> _box;
-
-  static final Storage instance = Storage._();
 
   Future<void> initialize() async {
     _box = await Hive.openBox('storage');

@@ -4,8 +4,8 @@ import '../../constants/strings.dart';
 import '../widgets/blue_divider.dart';
 import '../widgets/user_info_listtile.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class UserDetailsScreen extends StatelessWidget {
+  const UserDetailsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
