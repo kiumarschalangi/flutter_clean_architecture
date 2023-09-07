@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../constants/sizes.dart';
+import 'package:user_info_module/core/constants/sizes.dart';
 
 class UserInfoListTile extends StatelessWidget {
   const UserInfoListTile({

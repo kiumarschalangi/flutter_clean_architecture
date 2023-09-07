@@ -8,8 +8,6 @@ final GetIt getIt = GetIt.instance;
 
 Future<void> init() async {
   getIt.registerSingleton<UserRemoteDataSource>(UserRemoteDataSource());
-  // getIt.registerFactory<UserInfoBloc>(
-  //     () => UserInfoBloc(getUserInfo: getIt<GetUserInfo>()));
   getIt.registerSingleton<UserLocalDataSource>(UserLocalDataSource());
   getIt.registerSingleton<UserRepositoryImpl>(
     UserRepositoryImpl(

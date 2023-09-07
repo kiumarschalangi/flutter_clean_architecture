@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'injection_container.dart';
 import 'modules/user_details/presentation/bloc/user_details_bloc.dart';
-import 'modules/user_info/presentation/screen/user_details_screen.dart.dart';
+import 'modules/user_details/presentation/screen/user_details_screen.dart.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

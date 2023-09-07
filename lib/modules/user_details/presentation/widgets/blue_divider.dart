@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/sizes.dart';
+import '../../../../core/constants/sizes.dart';
 
 class BlueDivider extends StatelessWidget {
   const BlueDivider({

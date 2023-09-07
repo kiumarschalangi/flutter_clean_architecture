@@ -1,16 +1,47 @@
-# user_info_module
 
-A new Flutter project.
+# Flutter Clean architecture
+
+## Overview
+
+This Flutter project serves as a clean architecture boilerplate with a modular structure. It is designed to help you kickstart your Flutter projects with a solid architecture foundation. The project follows a module-based structure, where each module is a self-contained folder that contains domain logic, data sources, and presentation components. Additionally, each module includes a configuration folder and a constants folder for easier organization.
+
+## Modules
+
+- **User info**: Contains user email and user name .
+
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Clone the Repository**: Clone this repository to your local machine using Git.
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+git clone < repository_url >
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Install Dependencies**: Navigate to the project's root directory and install the required dependencies using Flutter's package manager.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+```
+
+3. **Run the App**: Launch the app on your preferred emulator or physical device.
+
+```bash
+flutter run
+```
+***Dependencies used 
+  flutter_bloc: as state manager
+  equatable: to compare objects 
+  hive: as local storage 
+  http: for communication with remote apis 
+  hive_flutter: local storage 
+
+
+***folder structure 
+
+  - **domain**: contains entities ,useCases and repository interface.
+  - **data**: contains data sources (remote ,local) , repository implementation and models.
+  - **presentation**: contains UI components in the widget folder , screen , bloc.
+  - **config**: contains configurations like router, themes , … 
+  - **constants**: contains our constants values like strings, api path , …

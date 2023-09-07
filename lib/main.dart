@@ -9,6 +9,5 @@ void main() async {
   await di.init();
   await Hive.initFlutter();
   await UserLocalDataSource().initialize();
-
   runApp(const MyApp());
 }
